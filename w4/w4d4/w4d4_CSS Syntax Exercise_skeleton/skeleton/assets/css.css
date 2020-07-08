@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif; 
+    background-color: aquamarine;  
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+
+.ingredients-list {
+    list-style: square inside;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+header > img {
+    width: 100px;
+}
+
+ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input[type='radio'] {
+    cursor: pointer;
+    outline: none; 
+}
+
+input:last-child {
+ background-color: gold;
+}

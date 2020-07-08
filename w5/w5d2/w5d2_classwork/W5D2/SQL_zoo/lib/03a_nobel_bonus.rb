@@ -1,0 +1,34 @@
+# == Schema Information
+#
+# Table name: nobels
+#
+#  yr          :integer
+#  subject     :string
+#  winner      :string
+
+require_relative './sqlzoo.rb'
+
+def physics_no_chemistry
+  # In which years was the Physics prize awarded, but no Chemistry prize?
+  execute(<<-SQL)
+  SELECT
+    yr
+  FROM
+    nobels
+  WHERE IN ( 
+    SELECT 
+      *
+    FROM 
+      nobels 
+    WHERE 
+      subject NOT LIKE 'Chemistry'
+  )
+  SQL
+end
+
+
+# GROUP BY
+# yr
+# HAVING
+# subject LIKE 'Chemistry' IS NULL AND
+# subject LIKE 'Physics' IS NOT NULL

@@ -1,0 +1,28 @@
+
+body,h1,h2, {
+    /* Clear default margin, padding and border from any elements that we're using in our HTML. */
+    margin: 0;
+    border: 0;
+    padding: 0;
+    
+    /* Make sure font properties get inherited. */
+    font: inherit; 
+    text-align: inherit;
+    text-decoration: inherit;
+    color: inherit;
+
+    /* Remove default styling from lists. */
+    list-style: none;
+}
+/* Give text in the body a line-height of 1.5. */
+
+body p{
+    line-height: 1.5;
+}
+
+
+/* Make sure images always take up the width of their parents. */
+
+img {
+    width: inherit;
+}
