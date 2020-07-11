@@ -32,11 +32,10 @@ class User < ApplicationRecord
     #  return the set of artworks that have been shared with 
     # that user (not the set of artworks that a user has shared with others).
 
+#     class User < ApplicationRecord
+#        has_many :posts, dependent: :destroy
+#     end
 
-    # or could it be
-    # has_many :shared_artworks 
-    # through: :artworks, 
-    # source: :artwork_shares this return all shares of an artist 
 
 end
 

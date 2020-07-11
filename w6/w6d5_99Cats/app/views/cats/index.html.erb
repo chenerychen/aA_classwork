@@ -1,0 +1,17 @@
+<h1>Cats Index</h1>
+
+<ul>
+    <% @cats.each do |cat| %>
+    <ul>
+        <li> <%=  cat.name %></li>
+        <li> <%=  cat.age %></li>
+        <li> <%=  cat.color %></li>
+
+        <!-- THIS IS NEEDED WITH A PARTIAL FILE -->
+        <!-- <li>
+            <%#= render 'cat', cat: cat, action: :index %> 
+        </li> -->
+    </ul>
+        <br>
+    <% end %>
+</ul>
