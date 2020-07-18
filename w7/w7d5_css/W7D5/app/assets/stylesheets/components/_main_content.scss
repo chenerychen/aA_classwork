@@ -1,0 +1,40 @@
+main {
+  margin-top: 15px;
+}
+iframe {
+  width: 100%;
+}
+main header {
+  text-decoration: underline;
+}
+
+.col-1-6 header {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.author {
+  color: $gray;
+  font-size: 10px;
+  margin: 4px 0;
+}
+
+.react {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.react li {
+  margin: 10px 0;
+}
+
+.col-1-6 a:nth-child(4) {
+  color: $blue;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.warning {
+  padding: 15px 0; 
+}
